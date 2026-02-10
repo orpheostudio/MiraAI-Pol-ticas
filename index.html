@@ -1,367 +1,276 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade - Aira AI by AmplaAI</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>Política de Privacidade - Claudinei | AmplaAI</title>
+    <meta name="robots" content="index, follow">
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
+```
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXXX"
+ crossorigin="anonymous"></script>
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        .header {
-            background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        line-height: 1.8;
+        color: #2c3e50;
+        background: #f8f9fa;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .header h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .back-link {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: 2px solid white;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+    }
+
+    .back-link:hover {
+        background: white;
+        color: #667eea;
+    }
+
+    .content {
+        background: white;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #2c3e50;
+        font-size: 1.8em;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #667eea;
+    }
+
+    h3 {
+        color: #34495e;
+        font-size: 1.3em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+    ul {
+        margin: 15px 0 15px 30px;
+    }
+
+    li {
+        margin: 10px 0;
+        color: #555;
+    }
+
+    strong {
+        color: #2c3e50;
+    }
+
+    .update-date {
+        color: #7f8c8d;
+        font-style: italic;
+        margin-bottom: 30px;
+    }
+
+    .highlight-box {
+        background: #f0f7ff;
+        border-left: 4px solid #667eea;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            padding: 30px 20px;
         }
 
         .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            font-weight: 300;
+            font-size: 1.8em;
         }
+    }
+</style>
+```
 
-        .header p {
-            font-size: 1.1em;
-            opacity: 0.9;
-        }
-
-        .content {
-            padding: 40px 30px;
-        }
-
-        .last-updated {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-            border-left: 4px solid #27ae60;
-        }
-
-        .last-updated strong {
-            color: #2c3e50;
-        }
-
-        .section {
-            margin-bottom: 35px;
-        }
-
-        .section h2 {
-            color: #2c3e50;
-            font-size: 1.4em;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid #ecf0f1;
-        }
-
-        .section h3 {
-            color: #34495e;
-            font-size: 1.2em;
-            margin: 20px 0 10px 0;
-        }
-
-        .section p {
-            margin-bottom: 12px;
-            text-align: justify;
-        }
-
-        .section ul {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
-
-        .section li {
-            margin-bottom: 8px;
-        }
-
-        .data-categories {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
-        }
-
-        .data-category {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #3498db;
-        }
-
-        .data-category h4 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-
-        .highlight {
-            background: #fff3cd;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #ffc107;
-            margin: 20px 0;
-        }
-
-        .warning {
-            background: #f8d7da;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #dc3545;
-            margin: 20px 0;
-        }
-
-        .rights-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
-        }
-
-        .right-item {
-            background: #e8f5e8;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .right-item strong {
-            color: #27ae60;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .contact-info {
-            background: #d4edda;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #28a745;
-            margin-top: 30px;
-        }
-
-        .contact-info strong {
-            color: #155724;
-        }
-
-        .footer {
-            background: #34495e;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-
-            .header h1 {
-                font-size: 2em;
-            }
-
-            .content {
-                padding: 20px 15px;
-            }
-
-            .header {
-                padding: 30px 20px;
-            }
-
-            .data-categories {
-                grid-template-columns: 1fr;
-            }
-
-            .rights-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .back-button {
-            display: inline-block;
-            background: #27ae60;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background 0.3s ease;
-        }
-
-        .back-button:hover {
-            background: #219a52;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Política de Privacidade</h1>
-            <p>Aira AI by AmplaAI Platforms</p>
-        </div>
-
-        <div class="content">
-            <div class="last-updated">
-                <strong>Data da última atualização:</strong> 20 de março de 2025
-            </div>
-
-            <div class="section">
-                <h2>1. Informações que Coletamos</h2>
-
-                <h3>a. Informações Fornecidas por Você:</h3>
-                <ul>
-                    <li><strong>Informações da Conta:</strong> Nome, endereço de e-mail, foto de perfil</li>
-                    <li><strong>Conteúdo do Usuário:</strong> Imagens, textos, prompts e outros conteúdos que você carrega ou gera</li>
-                    <li><strong>Informações de Suporte:</strong> Dados fornecidos ao entrar em contato com nosso suporte</li>
-                </ul>
-
-                <h3>b. Informações Coletadas Automaticamente:</h3>
-                <ul>
-                    <li><strong>Dados de Uso:</strong> Funcionalidades utilizadas, tempo de sessão, data/hora das atividades</li>
-                    <li><strong>Dados do Dispositivo:</strong> Tipo de dispositivo, sistema operacional, identificadores únicos, endereço IP</li>
-                </ul>
-
-                <h3>c. Informações de Terceiros:</h3>
-                <p>Se você fizer login através de serviços de terceiros (Google, Apple, etc.), podemos receber informações do seu perfil de acordo com suas configurações de autorização.</p>
-            </div>
-
-            <div class="section">
-                <h2>2. Como Usamos Suas Informações</h2>
-                <div class="data-categories">
-                    <div class="data-category">
-                        <h4>Operação do Serviço</h4>
-                        <p>Fornecer e manter o funcionamento do Aira AI</p>
-                    </div>
-                    <div class="data-category">
-                        <h4>Processamento de Solicitações</h4>
-                        <p>Gerar imagens e respostas com base nos seus prompts</p>
-                    </div>
-                    <div class="data-category">
-                        <h4>Melhoria Contínua</h4>
-                        <p>Analisar uso para treinar e melhorar nosso modelo de IA</p>
-                    </div>
-                    <div class="data-category">
-                        <h4>Segurança</h4>
-                        <p>Detectar e prevenir atividades não autorizadas</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>3. Base Legal para o Tratamento</h2>
-                <p>Seu tratamento de dados é baseado em:</p>
-                <ul>
-                    <li><strong>Execução do contrato:</strong> Fornecer o serviço que você solicitou</li>
-                    <li><strong>Consentimento:</strong> Para finalidades específicas quando aplicável</li>
-                    <li><strong>Legítimo interesse:</strong> Melhorar a segurança e qualidade do serviço</li>
-                </ul>
-                <div class="highlight">
-                    <p><strong>Conformidade com LGPD:</strong> Nossos processos estão em conformidade com a Lei Geral de Proteção de Dados do Brasil.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>4. Compartilhamento de Informações</h2>
-                <div class="warning">
-                    <p><strong>NÃO vendemos seus dados pessoais.</strong></p>
-                </div>
-                <p>Podemos compartilhar informações apenas nas seguintes situações:</p>
-                <ul>
-                    <li><strong>Prestadores de Serviços:</strong> Empresas que nos auxiliam na operação do App</li>
-                    <li><strong>Obrigação Legal:</strong> Quando exigido por lei ou processo legal</li>
-                    <li><strong>Proteção de Direitos:</strong> Para proteger nossos direitos e a segurança dos usuários</li>
-                </ul>
-            </div>
-
-            <div class="section">
-                <h2>5. Seus Direitos de Privacidade</h2>
-                <p>De acordo com a LGPD, você tem direito a:</p>
-                <div class="rights-grid">
-                    <div class="right-item">
-                        <strong>Acesso</strong>
-                        <span>Solicitar uma cópia de seus dados</span>
-                    </div>
-                    <div class="right-item">
-                        <strong>Correção</strong>
-                        <span>Retificar dados imprecisos</span>
-                    </div>
-                    <div class="right-item">
-                        <strong>Exclusão</strong>
-                        <span>Solicitar a deleção de dados</span>
-                    </div>
-                    <div class="right-item">
-                        <strong>Portabilidade</strong>
-                        <span>Receber dados em formato estruturado</span>
-                    </div>
-                    <div class="right-item">
-                        <strong>Revogação</strong>
-                        <span>Retirar consentimentos dados</span>
-                    </div>
-                    <div class="right-item">
-                        <strong>Oposição</strong>
-                        <span>Opor-se a tratamentos específicos</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>6. Retenção de Dados</h2>
-                <p>Reteremos suas informações apenas pelo tempo necessário para cumprir as finalidades descritas nesta política, a menos que um período de retenção mais longo seja exigido por lei.</p>
-                <div class="highlight">
-                    <p><strong>Nota:</strong> O conteúdo que você gera pode ser mantido para fins de melhoria do modelo, a menos que você solicite explicitamente a exclusão.</p>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>7. Segurança das Informações</h2>
-                <p>Implementamos medidas de segurança técnicas e organizacionais para proteger seus dados. No entanto, nenhum sistema é 100% seguro.</p>
-            </div>
-
-            <div class="section">
-                <h2>8. Transferência Internacional</h2>
-                <p>Seus dados podem ser processados em servidores fora do Brasil, sempre com as salvaguardas adequadas exigidas pela LGPD.</p>
-            </div>
-
-            <div class="section">
-                <h2>9. Alterações nesta Política</h2>
-                <p>Podemos atualizar esta política periodicamente. Notificaremos sobre alterações materiais publicando a nova versão no App.</p>
-            </div>
-
-            <div class="contact-info">
-                <h2>10. Contato</h2>
-                <p>Para exercer seus direitos ou tirar dúvidas sobre privacidade:</p>
-                <p><strong>E-mail Oficial:</strong> ampla.ai@outlook.com</p>
-                <p><strong>Site Oficial:</strong> www.orpheostudio.com.br</p>
-                <p><strong>Instagram:</strong> @ampla.ai</p>
-                <p><strong>Plataforma:</strong> AmplaAI Platforms (AmplaAI)</p>
-            </div>
-
-            <a href="https://www.orpheostudio.com.br" class="back-button">← Voltar para o Site</a>
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2025 AmplaAI Platforms. Todos os direitos reservados.</p>
-            <p>Protegendo sua privacidade com transparência</p>
-        </div>
+    <div class="header">
+        <h1>Política de Privacidade</h1>
+        <p>AmplaAI Platforms - Claudinei</p>
+        <a href="/" class="back-link">← Voltar ao Site</a>
     </div>
+
+```
+<div class="container">
+    <div class="content">
+        <p class="update-date"><strong>Última atualização:</strong> 10 de fevereiro de 2024</p>
+
+        <p>A AmplaAI Platforms ("nós", "nosso" ou "nos") opera o site claudinei.ia.br e o assistente de IA Claudinei (doravante referido como "Serviço"). Esta página informa sobre nossas políticas relacionadas à coleta, uso e divulgação de dados pessoais quando você usa nosso Serviço e as escolhas que você tem associadas a esses dados.</p>
+
+        <div class="highlight-box">
+            <strong>Compromisso com sua Privacidade:</strong> Levamos a privacidade dos nossos usuários muito a sério. Esta política descreve como coletamos, usamos e protegemos suas informações pessoais.
+        </div>
+
+        <h2>1. Informações que Coletamos</h2>
+
+        <h3>1.1 Informações Fornecidas por Você</h3>
+        <p>Podemos coletar as seguintes informações quando você utiliza nosso Serviço:</p>
+        <ul>
+            <li><strong>Dados de Conversação:</strong> As mensagens e interações que você tem com o Claudinei</li>
+            <li><strong>Informações de Contato:</strong> Nome, endereço de e-mail quando você entra em contato conosco</li>
+            <li><strong>Informações de Conta:</strong> Se você criar uma conta, coletamos nome de usuário e senha</li>
+        </ul>
+
+        <h3>1.2 Informações Coletadas Automaticamente</h3>
+        <p>Quando você acessa nosso Serviço, podemos coletar automaticamente:</p>
+        <ul>
+            <li><strong>Dados de Uso:</strong> Informações sobre como você usa o Serviço, páginas visitadas, tempo de permanência</li>
+            <li><strong>Dados do Dispositivo:</strong> Tipo de dispositivo, sistema operacional, navegador</li>
+            <li><strong>Endereço IP:</strong> Seu endereço IP pode ser coletado para fins de segurança e análise</li>
+            <li><strong>Cookies:</strong> Utilizamos cookies para melhorar a experiência do usuário</li>
+        </ul>
+
+        <h2>2. Como Usamos Suas Informações</h2>
+        <p>Utilizamos os dados coletados para diversos fins:</p>
+        <ul>
+            <li>Fornecer e manter nosso Serviço</li>
+            <li>Melhorar, personalizar e expandir nosso Serviço</li>
+            <li>Entender e analisar como você usa nosso Serviço</li>
+            <li>Desenvolver novos produtos, serviços, recursos e funcionalidades</li>
+            <li>Comunicar com você para fornecer atualizações e outras informações relacionadas ao Serviço</li>
+            <li>Enviar e-mails promocionais (com seu consentimento)</li>
+            <li>Detectar, prevenir e resolver problemas técnicos e de segurança</li>
+        </ul>
+
+        <h2>3. Cookies e Tecnologias de Rastreamento</h2>
+        <p>Utilizamos cookies e tecnologias de rastreamento semelhantes para rastrear a atividade em nosso Serviço e manter certas informações.</p>
+
+        <h3>3.1 Tipos de Cookies que Utilizamos</h3>
+        <ul>
+            <li><strong>Cookies Essenciais:</strong> Necessários para o funcionamento básico do site</li>
+            <li><strong>Cookies de Desempenho:</strong> Ajudam-nos a entender como os visitantes interagem com nosso site</li>
+            <li><strong>Cookies de Funcionalidade:</strong> Permitem que o site lembre suas escolhas</li>
+            <li><strong>Cookies de Publicidade:</strong> Usados para exibir anúncios relevantes</li>
+        </ul>
+
+        <div class="highlight-box">
+            <strong>Google AdSense:</strong> Nosso site utiliza o Google AdSense para exibir anúncios. O Google pode usar cookies para exibir anúncios baseados em suas visitas anteriores ao nosso site ou a outros sites. Você pode desativar anúncios personalizados visitando as <a href="https://www.google.com/settings/ads" target="_blank" style="color: #667eea;">Configurações de Anúncios do Google</a>.
+        </div>
+
+        <h2>4. Compartilhamento de Dados</h2>
+        <p>Não vendemos, trocamos ou transferimos suas informações pessoais para terceiros, exceto:</p>
+        <ul>
+            <li><strong>Provedores de Serviço:</strong> Podemos compartilhar informações com prestadores de serviços terceirizados que nos auxiliam na operação do site</li>
+            <li><strong>Google AdSense:</strong> Informações podem ser compartilhadas com o Google para exibição de anúncios</li>
+            <li><strong>Requisitos Legais:</strong> Quando exigido por lei ou para proteger nossos direitos</li>
+            <li><strong>Transações Comerciais:</strong> Em caso de fusão, aquisição ou venda de ativos</li>
+        </ul>
+
+        <h2>5. Segurança dos Dados</h2>
+        <p>A segurança de seus dados é importante para nós. Implementamos medidas de segurança técnicas e organizacionais apropriadas para proteger suas informações pessoais, incluindo:</p>
+        <ul>
+            <li>Criptografia SSL/TLS para transmissão de dados</li>
+            <li>Armazenamento seguro de dados</li>
+            <li>Acesso restrito a informações pessoais</li>
+            <li>Monitoramento regular de vulnerabilidades de segurança</li>
+        </ul>
+
+        <p>No entanto, nenhum método de transmissão pela Internet ou método de armazenamento eletrônico é 100% seguro.</p>
+
+        <h2>6. Seus Direitos de Privacidade</h2>
+        <p>De acordo com a Lei Geral de Proteção de Dados (LGPD), você tem os seguintes direitos:</p>
+        <ul>
+            <li><strong>Acesso:</strong> Solicitar acesso aos seus dados pessoais</li>
+            <li><strong>Correção:</strong> Solicitar correção de dados imprecisos ou incompletos</li>
+            <li><strong>Exclusão:</strong> Solicitar a exclusão de seus dados pessoais</li>
+            <li><strong>Portabilidade:</strong> Solicitar a transferência de seus dados para outro provedor</li>
+            <li><strong>Oposição:</strong> Opor-se ao processamento de seus dados pessoais</li>
+            <li><strong>Revogação de Consentimento:</strong> Retirar seu consentimento a qualquer momento</li>
+        </ul>
+
+        <p>Para exercer esses direitos, entre em contato conosco através do e-mail: <strong>ampla.ai@outlook.com</strong></p>
+
+        <h2>7. Retenção de Dados</h2>
+        <p>Reteremos seus dados pessoais apenas pelo tempo necessário para os fins estabelecidos nesta Política de Privacidade. Reteremos e usaremos seus dados na medida necessária para cumprir nossas obrigações legais, resolver disputas e fazer cumprir nossos acordos e políticas.</p>
+
+        <h2>8. Links para Outros Sites</h2>
+        <p>Nosso Serviço pode conter links para outros sites que não são operados por nós. Se você clicar em um link de terceiros, será direcionado para o site desse terceiro. Recomendamos que você revise a Política de Privacidade de cada site que visitar.</p>
+
+        <h2>9. Privacidade de Crianças</h2>
+        <p>Nosso Serviço não é direcionado a menores de 18 anos. Não coletamos intencionalmente informações pessoais identificáveis de menores de 18 anos. Se você é pai/mãe ou responsável e está ciente de que seu filho nos forneceu dados pessoais, entre em contato conosco.</p>
+
+        <h2>10. Publicidade de Terceiros</h2>
+
+        <h3>10.1 Google AdSense e DoubleClick Cookie</h3>
+        <p>O Google, como fornecedor terceirizado, usa cookies para exibir anúncios em nosso site. O uso do cookie DART pelo Google permite que ele exiba anúncios aos nossos usuários com base em suas visitas ao nosso site e a outros sites na Internet.</p>
+
+        <p>Os usuários podem desativar o uso do cookie DART visitando a política de privacidade da rede de conteúdo e anúncios do Google em: <a href="https://policies.google.com/technologies/ads" target="_blank" style="color: #667eea;">https://policies.google.com/technologies/ads</a></p>
+
+        <h3>10.2 Parceiros de Publicidade</h3>
+        <p>Alguns dos anunciantes em nosso site podem usar cookies e web beacons. Nossos parceiros de publicidade incluem:</p>
+        <ul>
+            <li>Google AdSense</li>
+        </ul>
+
+        <p>Cada um desses parceiros de publicidade possui sua própria Política de Privacidade para suas políticas sobre dados do usuário.</p>
+
+        <h2>11. Transferências Internacionais de Dados</h2>
+        <p>Suas informações podem ser transferidas e mantidas em servidores localizados fora do seu estado, província, país ou outra jurisdição governamental onde as leis de proteção de dados podem diferir daquelas de sua jurisdição. Ao utilizar nosso Serviço, você concorda com essa transferência.</p>
+
+        <h2>12. Alterações a Esta Política de Privacidade</h2>
+        <p>Podemos atualizar nossa Política de Privacidade periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova Política de Privacidade nesta página e atualizando a "data da última atualização" no topo desta Política.</p>
+
+        <p>Recomendamos que você revise esta Política de Privacidade periodicamente para quaisquer alterações. As alterações a esta Política de Privacidade são efetivas quando publicadas nesta página.</p>
+
+        <h2>13. Contato</h2>
+        <p>Se você tiver dúvidas sobre esta Política de Privacidade, entre em contato conosco:</p>
+        <div class="highlight-box">
+            <p><strong>E-mail:</strong> ampla.ai@outlook.com</p>
+            <p><strong>Website:</strong> claudinei.ia.br</p>
+            <p><strong>Empresa:</strong> AmplaAI Platforms</p>
+        </div>
+
+        <h2>14. Consentimento</h2>
+        <p>Ao usar nosso site, você consente com nossa Política de Privacidade e concorda com seus Termos e Condições.</p>
+    </div>
+</div>
+```
+
 </body>
 </html>
